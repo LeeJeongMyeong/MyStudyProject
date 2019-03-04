@@ -46,3 +46,10 @@ for i in range(n):
 	else : 
 		print ("Data set ",i+1,": no")
 		word = []
+		
+"""
+3
+cat tree tcraete
+cat tree catrtee
+cat tree cttaree
+"""
