@@ -19,8 +19,8 @@ def frontCircuit():
 			firstAnswer += tree[count][0]
 			break
 	
-	if tree[count][1] != '.':
 		findNode = tree[count][1]
+	if tree[count][1] != '.':
 		frontCircuit()
 		
 	if tree[count][2] != '.':

@@ -25,6 +25,7 @@ def dfs(x, y):
 		dfs(x, y+1)
 			
 for i in range(a):
+
 	c = input()
 	for j in range(len(c)):
 		b[i][j] = int(c[j])
