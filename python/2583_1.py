@@ -15,15 +15,19 @@ def bfs(y, x):
 		if tmp_x > 0 and visit[tmp_y][tmp_x-1] == 0:
 			q.put([tmp_y, tmp_x-1])
 			visit[tmp_y][tmp_x-1] = 1
+			
 		if tmp_x < max_x-1 and visit[tmp_y][tmp_x+1] == 0:
 			q.put([tmp_y, tmp_x+1])
 			visit[tmp_y][tmp_x+1] = 1
+			
 		if tmp_y > 0 and visit[tmp_y-1][tmp_x] == 0:
 			q.put([tmp_y-1, tmp_x])
 			visit[tmp_y-1][tmp_x] = 1
+			
 		if tmp_y < max_y-1 and visit[tmp_y+1][tmp_x] == 0:
 			q.put([tmp_y+1, tmp_x])
 			visit[tmp_y+1][tmp_x] = 1
+			
 	land_count.append(t_count)
 
 
